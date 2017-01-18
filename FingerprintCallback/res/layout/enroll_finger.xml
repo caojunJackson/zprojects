@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     <com.android.activity.HorizontalProgressBarWithNumber
+        android:id="@+id/progress_enroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:padding="5dp"
+        app:progress_text_color="#ffF53B03"
+        app:progress_unreached_color="#ffF7C6B7"
+        app:progress_reached_bar_height="5dp"
+        app:progress_unreached_bar_height="2dp"
+         />
+     
+
+    <LinearLayout 
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <ImageView
+        android:id="@+id/enroll_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_fingerprint_setting_1" />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/enroll_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+    
+    <LinearLayout 
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical|bottom"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        >
+    	<Button
+    	    android:id="@+id/add_others_finger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/action_add_finger_others"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/suc_finger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/action_add_enroll"
+            android:layout_weight="1" />
+        
+    </LinearLayout>
+   
+</LinearLayout>

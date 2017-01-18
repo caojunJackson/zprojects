@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FingerprintCallbackDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <string name="action_enroll">enroll</string>
+    <string name="action_match">match</string>
+    <string name="action_remove">remove</string>
+    <string name="action_et_remove">"请输入指纹ID，然后按remove键"</string>
+
+    <string name="action_add_finger_others">再添加一个</string>
+    <string name="action_add_enroll">完成</string>
+</resources>
