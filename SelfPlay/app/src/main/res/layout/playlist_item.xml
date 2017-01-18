@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.android.view.SwipeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/im_suo"
+            android:layout_width="78dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_menu_slideshow" />
+            <TextView
+            android:id="@+id/tv_pszie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/im_suo"
+            android:layout_toRightOf="@+id/im_suo"
+            android:text="@string/textview" />
+
+        <TextView
+            android:id="@+id/tv_pname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/im_suo"
+            android:text="@string/textview" />
+
+        <TextView
+            android:id="@+id/tv_pduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_pszie"
+            android:layout_alignBottom="@+id/tv_pszie"
+            android:layout_marginLeft="58dp"
+            android:layout_toRightOf="@+id/tv_pszie"
+            android:text="@string/textview" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="60dp">
+            <RelativeLayout
+                android:id="@+id/delete_button"
+                android:clickable="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#ff0000">
+                <View
+                    android:layout_centerInParent="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/trash"/>
+            </RelativeLayout>
+<!--
+            <RelativeLayout
+                android:id="@+id/view_button"
+                android:clickable="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#c2c2c2">
+                <View
+                    android:layout_centerInParent="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/magnifier"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/star_button"
+                android:clickable="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#aaffff">
+                <View
+                    android:layout_centerInParent="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/star"/>
+            </RelativeLayout>
+-->
+        </LinearLayout>
+    </com.android.view.SwipeLayout>
+</RelativeLayout>

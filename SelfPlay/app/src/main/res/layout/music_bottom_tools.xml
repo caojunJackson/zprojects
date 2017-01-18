@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageview_music_bottom"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/round_image_background"
+        android:src="@drawable/music_list_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+    <SeekBar
+        android:id="@+id/seekbar_music_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+        <com.android.view.AlwaysMarqueeTextView
+            android:id="@+id/textview_songname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="15dp"
+            android:text="Songname"/>
+
+
+        <ImageButton
+            android:id="@+id/music_bt_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/start_button_video"
+            android:layout_marginRight="70dp"
+            />
+        <ImageButton
+            android:id="@+id/music_bt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_button_video"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center_vertical"
+
+            />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

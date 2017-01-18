@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="自定义">
+    <SwitchPreference
+        android:key="getsture_change_song"
+        android:title="手势换歌"
+        android:summary="在音乐界面，通过传感器控制切换到下一首歌曲"
+        />
+    <Preference
+        android:title="关于"
+        android:key="main_logout"/>
+    </PreferenceCategory>
+</PreferenceScreen>
