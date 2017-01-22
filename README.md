@@ -1,4 +1,4 @@
 # zprojects
-this is myself projects
+projects from github ,and some Android projects copy others friends ,thanks
 
-fht github use
+my projects just only for study
