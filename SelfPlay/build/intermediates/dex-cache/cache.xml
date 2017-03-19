@@ -1,3 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/libs/SocialSDK_QQZone_3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="289665479cc8e1c21cfd9dbdeb388a8544909d14">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/2/SocialSDK_QQZone_3_735bed627ba75f4a2fbf7adfa526b40eca9008f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_0ee826034313d9d8390cc3b24a3475effb47f2e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/libs/SocialSDK_tencentWB_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="328c5351cae13f2ab29450d22b6c02d0ac88a855">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/2/SocialSDK_tencentWB_1_e6b1ba6979562765ae6ff287f21e9cd325866112/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d3cdc22201fbac1791980f78b134b8da04798941">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7418268e50de169f111cc37e5199db311f082ca1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/libs/mta-sdk-1.6.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/2/mta-sdk-1.6.2_bff2a7dd7739031989118db12a52a9aeff7b73e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_f07471cc8daabba9b33b6c2492a169834e3c6749/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/libs/umeng_social_sdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ecd9307258b5190c7358d64a839dfe34d3a4acc8">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/2/umeng_social_sdk_9f906cda01126cc4498cdb29e47b6a4c2cb1865d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_f16386f2622cc4ee893f3b867255c04951a4efd2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_60c770721be717452441db96c7f4bf57b19a25db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/libs/SocialSDK_alipay.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f4796f688d7e242feff592a52465358487bb4541">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/2/SocialSDK_alipay_ce2b9874c499745a2c532597f2c7fba383b3f456/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ed01dc64e987a9c1f5bcad4754320d857ba7210d">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5f90564a240a9f00e816fb1e452460b2ed922f27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/libs/open_sdk_r5509.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="538ea8fb21ea76e8cb424598ac38127cb3344d79">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/2/open_sdk_r5509_eeb2170eb8981bf1b2246db76c0bb903e0b64fd4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_3e24b6374227779979ffa4fd3167ca9232d46f92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_783a06879c05d7ea3f1ac599eff569fb47a35ca6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_d827fd9690c8cfb769bc93d497225a8a0009ce50/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/libs/SocialSDK_tencentWB_3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="466b52d80a4917f6caade98846a6b22f476d02a3">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/2/SocialSDK_tencentWB_3_978d2062521d49c14da74b53a0a153b9e847bb6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/tools/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_a60cbf49bad64ad51e40ec5c6fcdc56b74588210/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/libs/SocialSDK_tencentWB_2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6f744074067eb201171c9c8ff1ca45ed821a76a8">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/2/SocialSDK_tencentWB_2_51d1910d4f80bd5111c0ab66273e5cc668a2505b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/fht/work/workman/gitHub/zprojects/SelfPlay/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_254cfb8fc59939b04a224f95e492d287b9863f31/classes.dex" />
+    </item>
+
+</items>
