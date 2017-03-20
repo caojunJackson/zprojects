@@ -1,5 +1,6 @@
 package com.android.jnidemo;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,9 @@ import android.widget.TextView;
 import com.android.jnidemo.util.Demo;
 import com.android.jnidemo.util.JniUtil;
 import com.android.jnidemo.R;
+
+import java.io.File;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private TextView textView;
@@ -68,5 +72,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
+    }
+
+
+    public void creatFile(){
+        File file = new File("/data/system/ma_fingerprint");
+        if(!file.exists()){
+            file.mkdirs();
+        }
+        Process p;
+        int status;
+
+        try {
+            p=Runtime.getRuntime().exec("chmod 777 "+file);
+            status = p.waitFor();
+            if(status == 0){
+                Log.d("fht"," 创建成功");
+            }else{
+                Log.d("fht","创建失败");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

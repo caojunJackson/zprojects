@@ -59,7 +59,9 @@ public class EnrollActivty extends Activity implements OnClickListener{
                    Log.i(TAG, "======SERVICE CONN ENROLL=====");
                    try {
                     mFingerprintManager.setOnEnrollListen(new MyEnrollListen());
+                    mFingerprintManager.preEnroll();
                     mFingerprintManager.enroll();
+                   Log.i(TAG, "======SERVICE CONN ENROLL END =====");
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
@@ -77,7 +79,7 @@ public class EnrollActivty extends Activity implements OnClickListener{
             switch (msg.what) {
                 case ENROLL_SUC:
                     try {
-                        mFingerprintManager.stopAuthenticate();
+                        mFingerprintManager.postEnroll();
                     } catch (RemoteException e) {
                         e.printStackTrace();
                     }
@@ -89,7 +91,7 @@ public class EnrollActivty extends Activity implements OnClickListener{
                     Toast.makeText(getApplicationContext(), "指纹录入成功", Toast.LENGTH_SHORT).show();
                     break;
                 case ENROLL_PROGRESS:
-                    mBar.setProgress(msg.arg1);
+                    mBar.setProgress(mBar.getMax()-msg.arg1);
                     showEnrollImage(msg.arg1);
                     break;
                     
@@ -119,7 +121,7 @@ public class EnrollActivty extends Activity implements OnClickListener{
         setContentView(R.layout.enroll_finger);
         initView();
         
-        mBar.setMax(100);
+        mBar.setMax(15);
         mBar.setProgress(0);
 
         Log.i(TAG, "=====Enroll Activity===");
@@ -237,7 +239,7 @@ public class EnrollActivty extends Activity implements OnClickListener{
                 break;
             case R.id.suc_finger:
                 try {
-                    mFingerprintManager.stopAuthenticate();
+                    mFingerprintManager.postEnroll();
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }

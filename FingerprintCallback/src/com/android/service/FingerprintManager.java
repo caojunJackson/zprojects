@@ -111,12 +111,19 @@ public class FingerprintManager extends Service {
         }
         
         @Override
-        public int enumerate(byte[] dat, int N) throws RemoteException {
+        public int enumerate(int[] dat, int N) throws RemoteException {
             // TODO Auto-generated method stub
             Jnifp.enumerate(dat, N);
             return 0;
         }
         
+        @Override
+        public int preEnroll() throws RemoteException {
+            Log.i(TAG, "=============FingerprintManager preEnroll ======");
+            Jnifp.preEnroll();
+            return 0;
+        }
+
         @Override
         public int enroll() throws RemoteException {
             // TODO Auto-generated method stub
@@ -124,7 +131,13 @@ public class FingerprintManager extends Service {
             Jnifp.enroll();
             return 0;
         }
-        
+        @Override
+        public int postEnroll() throws RemoteException {
+            Log.i(TAG, "=============FingerprintManager postEnroll ======");
+            Jnifp.postEnroll();
+            return 0;
+        }
+
         @Override
         public int authenticate() throws RemoteException {
             // TODO Auto-generated method stub

@@ -11,12 +11,16 @@ interface IFingerprintManager{
 	void setOnEnrollListen(IEnrollCallback callback);
 
 	int authenticate();
-	
+    
+    int preEnroll();
+
 	int enroll();
 	
+    int postEnroll();
+
 	int stopAuthenticate();
 	
 	int remove(int fid);
 	
-	int enumerate( inout byte[] dat, in int N);
+	int enumerate( inout int[] dat, in int N);
 }

@@ -13,8 +13,8 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src) \
                    src/com/android/aidl/IAuthenticateCallback.aidl \
                    src/com/android/aidl/IEnrollCallback.aidl
 
-LOCAL_PROGUARD_ENABLED:= disabled  
-LOCAL_PACKAGE_NAME := FingerprintCallback
+LOCAL_PROGUARD_ENABLED:= disabled
+LOCAL_PACKAGE_NAME := FingerprintCallbackDemo
 LOCAL_CERTIFICATE := platform
 include $(BUILD_PACKAGE)
 

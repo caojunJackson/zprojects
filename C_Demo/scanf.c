@@ -7,7 +7,7 @@
  ************************************************************************/
 
 #include<stdio.h>
-
+#include"scanf.h"
 void input1(){
     char str[128];
     char c;
@@ -37,6 +37,11 @@ int main(int argc, char *argv[]){
     result = scanf("%c %d %s",&c, &input, str);
     printf("c=%c, input=%d, str=%s , result=%d\n", c, input, str, result);
 */
+    if(strcmp(AA,"Android5.1")==0){
+        printf("===========this is Android5.1=======\n");
+    }else{
+        printf("===========this is Android6.0=======\n");
+    }
     input1();
     return 0;
 }

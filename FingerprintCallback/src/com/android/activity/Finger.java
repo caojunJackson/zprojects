@@ -3,7 +3,7 @@ package com.android.activity;
 public class Finger {
     String name;
     int id;
-    
+    int fingerID; 
     
     
     public String getName() {
@@ -19,4 +19,11 @@ public class Finger {
         this.id = id;
     }
     
+    public int getFingerID(){
+        return fingerID;
+    }
+    
+    public void setFingerID(int fingerid){
+        fingerID = fingerid;
+    }
 }

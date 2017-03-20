@@ -25,6 +25,8 @@ import com.android.service.KeyguardFingerprintService;
 import java.util.ArrayList;
 import java.util.List;
 import com.android.aidl.*;
+import java.io.File;
+import java.io.IOException;
 
 public class FingerprintMainActivity extends Activity {
     
@@ -36,7 +38,7 @@ public class FingerprintMainActivity extends Activity {
     private FingerAdapter mAdapter;
     private ImageButton addFingerBt;
     
-    byte[] dat = {0, 0, 0, 0, 0};
+    int[] dat = {0, 0, 0, 0, 0};
     
     private IFingerprintManager mFingerprintManager;
     
@@ -79,6 +81,8 @@ public class FingerprintMainActivity extends Activity {
         
         setContentView(R.layout.finger_main);
         
+        creatFile();
+
         mFingers = new ArrayList<Finger>();
         fingerListView = (ListView)findViewById(R.id.lv_finger);
         addFingerBt = (ImageButton)findViewById(R.id.image_add_finger);
@@ -103,9 +107,10 @@ public class FingerprintMainActivity extends Activity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                 Log.i(TAG, "=====select listview position="+position+" === id = "+mFingers.get(position).getId());
+                 Log.i(TAG, "=====select listview position="+position+" === id = "+mFingers.get(position).getFingerID());
                 try {
-                    mFingerprintManager.remove(mFingers.get(position).getId());
+                    mFingerprintManager.remove(mFingers.get(position).getFingerID());
+                    mAdapter.notifyDataSetChanged();
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
@@ -123,10 +128,32 @@ public class FingerprintMainActivity extends Activity {
         startService(intent);
     }
 
+    public void creatFile(){
+        File file = new File("/data/system/ma_fingerprint");
+        if(!file.exists()){
+            file.mkdirs();
+        }
+        Process p;
+        int status;
+
+        try {
+            p=Runtime.getRuntime().exec("chmod 777 "+file);
+            status = p.waitFor();
+            if(status == 0){
+                Log.d("fht"," 创建成功");
+            }else{
+                Log.d("fht","创建失败");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 
     private void getIds() {
         int count = 0;
         int[] temp = new int[5];
+        int[] fingerid = new int[5];
 
         mFingers.removeAll(mFingers);
         
@@ -134,6 +161,7 @@ public class FingerprintMainActivity extends Activity {
             Log.i(TAG, "===data=" + dat[i]);
             if (dat[i] > 0) {
                 temp[count] = i + 1;
+                fingerid[count] = dat[i];
                 count++;
                 Log.i(TAG, "===data===count=" + count);
             }
@@ -146,6 +174,7 @@ public class FingerprintMainActivity extends Activity {
             Finger finger = new Finger();
             finger.setId(temp[j]);
             finger.setName("指纹 "+temp[j] + "");
+            finger.setFingerID(fingerid[j]);
             mFingers.add(finger);
         }
 

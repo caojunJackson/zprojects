@@ -29,7 +29,7 @@ public class Jnifp {
                         break;
                     case Fingerprint.FP_OK:
                         mFingerprint.mEnrollCallback.onProgress(fp.result);
-                        if(fp.result == 100){
+                        if(fp.result == 0){
                             mFingerprint.mEnrollCallback.onEnrolled(fp.fid);
                         }
                         break;
@@ -144,12 +144,8 @@ public class Jnifp {
     
     public static native int stopAuthenticate(); //停止匹配
     
-    public static native int enumerate(byte[] dat, int N);       
+    public static native int enumerate(int[] dat, int N);       
     public static native int remove(int fid);   //移除指纹
-    
-    public static native int setDetectMode(int mode); //匹配解锁分开亮屏，灭屏
-    
-    public static native int setKeyMode(int mode); //设置key模式
         
     public native void setNotify(); //初始化回调方法，在开启指纹功能时要设置
     

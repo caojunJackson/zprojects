@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
 
     String path;
     Fingerprint mFingerprint;
-    byte[] dat = {
+    int[] dat = {
             0, 0, 0, 0, 0
     };
     TextView tv;
@@ -119,7 +119,7 @@ public class MainActivity extends Activity {
 
         mBar.setMax(100);
 
-        new Jnifp().setNotify();
+        //new Jnifp().setNotify();
         Jnifp.open(path);
         Log.i(TAG, "===========Activity====path=" + path);
         mButton.setOnClickListener(new OnClickListener() {
@@ -141,7 +141,6 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Jnifp.setDetectMode(1);
                 Log.i(TAG, "=============Activity match click====");
                 new Thread(new Runnable() {
 
