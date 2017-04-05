@@ -14,4 +14,54 @@
 
     <string name="action_add_finger_others">再添加一个</string>
     <string name="action_add_enroll">完成</string>
+    
+        <string name="ma_dlg_warn">警告</string>
+    <string name="ma_dlg_error">错误</string>
+    <string name="ma_dlg_yes">确定</string>
+    <string name="ma_dlg_no">取消</string>
+    <string name="ma_dlg_device">打开设备失败</string>
+    <string name="ma_dlg_memory">内存不足</string>
+    <string name="ma_dlg_chmodd">修改权限失败</string>
+    <string name="ma_dlg_del_touch">确认删除已注册数据吗？</string>
+    <string name="ma_dlg_dbase">打开数据库失败</string>
+    <string name="ma_dlg_table">创建数据库表失败</string>
+    <string name="ma_dlg_force_stop">未完成任务要停止吗？</string>
+    <string name="ma_dlg_capture_fail">采集数据失败.</string>
+    <string name="ma_dlg_save_fail">保存数据失败.</string>
+    <string name="ma_dlg_load_data_fail">加载数据1失败.</string>
+    <string name="ma_dlg_load_temp_fail">加载数据2失败.</string>
+    <string name="ma_dlg_finger_full">指纹已满</string>
+    <string name="ma_dlg_not_data">没有指纹数据，请添加后再打开服务</string>
+    <string name="ma_dlg_not_capture">没有发现采集数据</string>
+    <string name="ma_dlg_not_finger_template">请添加指纹数据</string>
+    
+    <string name="ma_settings">设置</string>
+    
+    <string name="ma_set_finger_title">指纹</string>
+    <string name="ma_set_finger_use">将指纹用于</string>
+    <string name="ma_set_finger_unlock">指纹解锁</string>
+    <string name="ma_set_finger_calibrate">指纹校准</string>
+    <string name="ma_set_finger_add">添加指纹</string>
+    <string name="ma_set_finger_capture">采集</string>
+    <string name="ma_set_finger_please_calibrate">请进行一次指纹校准</string>
+    <string name="touchid_fp_lockscreen">指纹解屏</string>
+    <string name="ma_enroll_add_finger">添加指纹</string>
+    <string name="ma_enroll_finger">注册指纹</string>
+    <string name="ma_enroll_cancel">取消</string>
+    <string name="ma_enroll_alter">换个区域</string>
+    <string name="ma_enroll_fid">指纹</string>
+    <string name="ma_enroll_succ">注册成功</string>
+    <string name="ma_enroll_fail">注册失败</string>
+    <string name="ma_enroll_place">放置手指</string>
+    <string name="ma_enroll_lift">移开手指</string>
+    <string name="register_notiece_steady_content">请把手指放置在有效区域，高效录入</string>
+    <string name="ma_enroll_adjust">调整握手姿势</string>
+    <string name="ma_enroll_go_obtain">继续调整，获取指纹边缘</string>
+    <string name="ma_enroll_go_on">继续</string>
+    
+    <string name="ma_set_finger_dlg_rename">重命名</string>
+    <string name="ma_set_finger_dlg_cancel">取消</string>
+    <string name="ma_set_finger_dlg_delete">删除</string>
+    <string name="ma_set_finger_dlg_confirm">确认</string>
+    <string name="ma_dlg_name_is_notNull">新的名字不能为空</string>
 </resources>

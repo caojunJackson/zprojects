@@ -42,6 +42,10 @@ int main(int argc, char *argv[]){
     }else{
         printf("===========this is Android6.0=======\n");
     }
-    input1();
+    //input1();
+
+    unsigned int grey_offset = 63;
+    int val = (((unsigned int)grey_offset << 4) | 0x0f) + 1;
+    printf("=============val = %d \n",val);
     return 0;
 }

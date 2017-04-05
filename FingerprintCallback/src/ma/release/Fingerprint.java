@@ -40,21 +40,23 @@ public class Fingerprint {
      * 单例
      */
     private Fingerprint(){}
-    private static class SingletonLoader {
-      private static final Fingerprint INSTANCE = new Fingerprint();
+    private volatile static Fingerprint fingerprint;
+    public static Fingerprint getInstance(){
+        if(fingerprint == null){
+            synchronized (Fingerprint.class) {
+                if (fingerprint == null) {
+                    fingerprint = new Fingerprint();
+                }
+            }
+        }
+        return fingerprint;
     }
 
-    public static Fingerprint getInstance() {
-      
-      return SingletonLoader.INSTANCE;
-    }
-    
     //测试用
     public void doEnroll(){
         mEnrollCallback.onCaptureCompleted();
     }
-    
-    
+
     public void setOnAuthenticateListen(IAuthenticateCallback callback){
         mAuthenticateCallback = callback;
     }

@@ -44,6 +44,13 @@ public class EnrollActivty extends Activity implements OnClickListener{
     private IFingerprintManager mFingerprintManager;
     private int fid;
     
+    private final int ic_finger[] = { R.drawable.ic_ma_finger0, R.drawable.ic_ma_finger1, R.drawable.ic_ma_finger2,
+            R.drawable.ic_ma_finger3, R.drawable.ic_ma_finger4, R.drawable.ic_ma_finger5, R.drawable.ic_ma_finger6,
+            R.drawable.ic_ma_finger7, R.drawable.ic_ma_finger8, R.drawable.ic_ma_finger9, R.drawable.ic_ma_finger10,
+            R.drawable.ic_ma_finger11, R.drawable.ic_ma_finger12, R.drawable.ic_ma_finger13,
+            R.drawable.ic_ma_finger14, R.drawable.ic_ma_finger15, R.drawable.ic_ma_finger16};
+    
+    
     private ServiceConnection connection = new ServiceConnection() {
         
         @Override
@@ -91,8 +98,9 @@ public class EnrollActivty extends Activity implements OnClickListener{
                     Toast.makeText(getApplicationContext(), "指纹录入成功", Toast.LENGTH_SHORT).show();
                     break;
                 case ENROLL_PROGRESS:
+                    Log.d(TAG, "----------progress = "+msg.arg1);
                     mBar.setProgress(mBar.getMax()-msg.arg1);
-                    showEnrollImage(msg.arg1);
+                    showEnrollImage(16-msg.arg1);
                     break;
                     
                  case ENROLL_CAPTURE_FAILD:
@@ -147,40 +155,8 @@ public class EnrollActivty extends Activity implements OnClickListener{
     
     
     private void showEnrollImage(int progress){
-        if(progress <1){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_1);
-        }else if(progress <7){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_2);
-        }else if(progress <14){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_3);
-        }else if(progress <21){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_4);
-        }else if(progress <28){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_5);
-        }else if(progress <35){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_6);
-        }else if(progress <42){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_7);
-        }else if(progress <49){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_8);
-        }else if(progress <56){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_9);
-        }else if(progress <64){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_10);
-        }else if(progress <72){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_11);
-        }else if(progress <79){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_12);
-        }else if(progress <86){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_14);
-        }else if(progress <93){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_15);
-        }else if(progress <=100){
-            enrollImage.setImageResource(R.drawable.ic_fingerprint_setting_16);
-        }
-        
+        enrollImage.setImageResource(ic_finger[progress]);
     }
-    
     
     class MyEnrollListen extends IEnrollCallback.Stub{
 

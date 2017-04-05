@@ -149,4 +149,5 @@ public class Jnifp {
         
     public native void setNotify(); //初始化回调方法，在开启指纹功能时要设置
     
+    public static native int resetVolt(); //重新配置彩图电压
 }
